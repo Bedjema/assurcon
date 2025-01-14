@@ -127,6 +127,11 @@ li {
 
 #header .container {
 	position: relative;
+	
+}
+
+#header .header-body {
+	background: linear-gradient(347deg, #ffffff 70%, rgb(234 234 234) 92%);
 }
 
 @media (max-width: 767px) {
