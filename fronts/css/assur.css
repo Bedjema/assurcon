@@ -22,7 +22,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 }
-
+.head-btn-1 {
+	display:none !important;
+}
+.head-btn-2 {
+	display:none !important;
+}
 body a {
 	outline: none !important;
 }
@@ -106,6 +111,12 @@ li {
 @media (max-width: 991px) {
 	#header .header-container:not(.container):not(.container-fluid) .header-nav-main {
 		padding: 0 0.75rem;
+	}
+	.head-btn-2 {
+		display:none !important;
+	}
+	.head-btn-1 {
+		display:block !important;
 	}
 }
 
@@ -395,6 +406,12 @@ li {
 	#header .header-nav-top .nav > li:not(.d-none) {
 		margin-left: 0;
 		padding-left: 0;
+	}
+	.head-btn-2 {
+		display:block !important;
+	}
+	.head-btn-1 {
+		display:block !important;
 	}
 }
 
