@@ -17293,3 +17293,6 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 .popover-header {
     display: none !important;
 }
+html.sticky-header-active .header-body {
+	box-shadow: 5px 0px 5px 4px #0000004a !important;
+}
