@@ -17318,3 +17318,9 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 html.sticky-header-active .header-body {
 	box-shadow: 5px 0px 5px 4px #0000004a !important;
 }
+.modal-header button {
+    background-color: #ffffff;
+    border: 0;
+    font-size: 25px;
+    color: #000000;
+}
