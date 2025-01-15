@@ -17324,3 +17324,10 @@ html.sticky-header-active .header-body {
     font-size: 25px;
     color: #000000;
 }
+
+.contact-form .form-control,.contact-form textarea {
+    border: 3px solid #8080805e !important;
+}
+.contact-form .form-control::placeholder,.contact-form textarea::placeholder {
+    color:#777 !important;
+}

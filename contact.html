@@ -61,7 +61,7 @@
 
     <link rel="stylesheet" href="./fronts/css/styles.css">
 
-    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -386,24 +386,23 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
             <div class="row mb-4">
                 <div class="col appear-animation" data-appear-animation="fadeInUpShorter"
                     data-appear-animation-delay="900">
-                    <form class="contact-form" action="php/contact-form.html" method="POST">
+                    <form class="contact-form" id="login_form" name="login_form" action="" method="POST">
 
                         <div class="row row-gutter-sm">
                             <div class="form-group col-lg-6 mb-4">
-                                <input type="text" value="" data-msg-required="Please enter your name." maxlength="100"
+                                <input type="text" value="" maxlength="100"
                                     class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark"
                                     name="name" id="name" required placeholder="Votre nom">
                             </div>
                             <div class="form-group col-lg-6 mb-4">
-                                <input type="email" value="" data-msg-required="Please enter your email address."
-                                    data-msg-email="Please enter a valid email address." maxlength="100"
+                                <input type="email" value="" maxlength="100"
                                     class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark"
                                     name="email" id="email" required placeholder="Votre email">
                             </div>
                         </div>
                         <div class="row row-gutter-sm">
                             <div class="form-group col-lg-12 mb-4">
-                                <input type="text" value="" data-msg-required="Please enter the subject."
+                                <input type="text" value=""
                                     maxlength="100"
                                     class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark"
                                     name="subject" id="subject" required placeholder="Subject">
@@ -411,7 +410,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                         </div>
                         <div class="row">
                             <div class="form-group col mb-4">
-                                <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10"
+                                <textarea maxlength="5000" rows="10"
                                     class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark"
                                     name="message" id="message" required placeholder="Message"></textarea>
                             </div>
@@ -454,7 +453,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                             <p class="text-0 line-height-2 text-color-gray-1000 mb-0"> En application des
                                 dispositions du Code de la Consommation, les consommateurs peuvent
                                 s'inscrire gratuitement sur le registre d'opposition au démarchage téléphonique
-                                <a href="http://www.bloctel.gouv.fr/" style="color: #4E8EBD !important;">www.bloctel.gouv.fr</a>
+                                <a href="http://www.bloctel.gouv.fr/" target="_blank" style="color: #4E8EBD !important;">www.bloctel.gouv.fr</a>
                             </p>
                         </div>
                     </div>
@@ -465,7 +464,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                             <div class="g-recaptcha" data-sitekey="6Lfq2koeAAAAAICHuoMAgglF1n4CRuMNbOUYBON9" data-callback="correctCaptcha">
                             </div>
                                 <input type="submit" value="Envoyer" name="submit"
-                                    class="btn btn-secondary text-uppercase btn-outline text-color-dark font-weight-semibold border-width-4 text-1 text-xl-3 d-inline-flex align-items-center px-5 py-3">
+                                    class="btn btn-secondary btn-outline mt-4 text-color-dark font-weight-semibold border-width-4 text-1 text-xl-3 d-inline-flex align-items-center px-5 py-3">
                             </div>
                         </div>
                     </form>
