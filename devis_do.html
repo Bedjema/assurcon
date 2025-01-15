@@ -310,7 +310,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                     <label for="type_client">Vous êtes :</label>
                                     <div>
 
-                                        <select id="type_client" name="type_client" class="form-control">
+                                        <select id="type_client" name="type_client" class="form-select form-control">
 
                                             <option value="Physique">Une personne physique</option>
 
@@ -329,7 +329,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                 <div class="form-group col-md-6">
                                     <label for="civilite">Civilité *</label>
 
-                                    <select id="civilite" name="civilite" class="form-control">
+                                    <select id="civilite" name="civilite" class="form-select form-control">
                                         <option value="Monsieur">Monsieur</option>
                                         <option value="Madame">Madame</option>
                                         <option value="Autre">Autre</option>
@@ -477,7 +477,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                     <label for="destination">Destination de la construction
                                         *</label>
                                     <div>
-                                        <select id="destination" name="destination" class="form-control"
+                                        <select id="destination" name="destination" class="form-select form-control"
                                             required="required">
                                             <option value="personnel">Usage personnel</option>
                                             <option value="location">Location</option>
@@ -493,7 +493,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                 <div class="form-group col-md-6">
                                     <label for="type">Type de travaux *</label>
                                     <div>
-                                        <select id="type" name="type_travaux" class="form-control" required="required"
+                                        <select id="type" name="type_travaux" class="form-select form-control" required="required"
                                             value="">
                                             <option value="neuve">Construction Neuve
                                             </option>
@@ -547,7 +547,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                     <label for="pente">Pente sur le terrain</label>
                                     <div>
 
-                                        <select id="pente" name="pente" class="form-control">
+                                        <select id="pente" name="pente" class="form-select form-control">
 
                                             <option value="0">Pas de pente</option>
                                             <option value="15">- de 15%</option>
@@ -562,7 +562,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                     <label for="mer">Est-elle à moins de
                                         300m de la mer ?</label>
                                     <div>
-                                        <select id="mer" name="mer" class="form-control" required="required">
+                                        <select id="mer" name="mer" class="form-select form-control" required="required">
                                             <option value="non">non</option>
                                             <option value="oui" data-toggle="tooltip" data-placement="right" title="Bonjour Madame, Monsieur ,
 
@@ -583,7 +583,7 @@ Nous vous prions de croire, Madame, Monsieur, en l'expression de notre parfaite 
                                         *</label>
                                     <div>
 
-                                        <select id="type_batiment" name="type_batiment" class="form-control"
+                                        <select id="type_batiment" name="type_batiment" class="form-select form-control"
                                             required="required">
                                             <option value="individuelle">Maison
                                                 individuelle</option>
@@ -612,7 +612,7 @@ Nous vous prions de croire, Madame, Monsieur, en l'expression de notre parfaite 
                                         ?</label>
                                     <div>
 
-                                        <select id="batiments" name="batiments" class="form-control"
+                                        <select id="batiments" name="batiments" class="form-select form-control"
                                             required="required">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -639,7 +639,7 @@ Nous vous prions de croire, Madame, Monsieur, en l'expression de notre parfaite 
 
                                     <div>
 
-                                        <select id="etages" name="etages" class="form-control">
+                                        <select id="etages" name="etages" class="form-select form-control">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -661,7 +661,7 @@ Nous vous prions de croire, Madame, Monsieur, en l'expression de notre parfaite 
 
                                     <div>
 
-                                        <select id="sous_sols" name="sous_sols" class="form-control">
+                                        <select id="sous_sols" name="sous_sols" class="form-select form-control">
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -683,7 +683,7 @@ Nous vous prions de croire, Madame, Monsieur, en l'expression de notre parfaite 
 
                                     <div>
 
-                                        <select id="garanties" name="garanties" class="form-control"
+                                        <select id="garanties" name="garanties" class="form-select form-control"
                                             required="required">
                                             <option value="do">Dommages
                                                 Ouvrage</option>
@@ -874,7 +874,7 @@ IMPORTANT : Deux intervenants obligatoirement dans cette formule
                 <div class="modal-header">
                     <h5 class="modal-title">
                     </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -898,7 +898,7 @@ IMPORTANT : Deux intervenants obligatoirement dans cette formule
                 </div>
                 <div class="modal-footer">
 
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
@@ -910,7 +910,7 @@ IMPORTANT : Deux intervenants obligatoirement dans cette formule
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -933,7 +933,7 @@ IMPORTANT : Deux intervenants obligatoirement dans cette formule
                 </div>
                 <div class="modal-footer">
 
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
