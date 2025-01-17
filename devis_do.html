@@ -286,7 +286,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
 
             <div class="row position-relative z-index-1">
                 <div class="col-md-9">
-                    <div class="px-5 py-4 bg-grey-100 card-form box-shadow-4">
+                    <div class="px-4 px-lg-5 py-4 bg-grey-100 card-form box-shadow-4">
                         <form id="login_form" class="custom-form-style-1" name="login_form" action="" method="post">
                             <div class="row justify-content-center position-relative z-index-1 pt-1">
                                 <div class="col-sm-12 text-left">
@@ -489,8 +489,8 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                 <div class="form-group col-md-6">
                                     <label for="type">Type de travaux *</label>
                                     <div>
-                                        <select id="type" name="type_travaux" class="form-select form-control" required="required"
-                                            value="">
+                                        <select id="type" name="type_travaux" class="form-select form-control"
+                                            required="required" value="">
                                             <option value="neuve">Construction Neuve
                                             </option>
                                             <option value="piscine">Construction neuve avec
@@ -511,8 +511,15 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                 <div class="form-group col-md-6">
                                     <label for="montant_existant">Montant de
                                         l'existant</label>
+                                    <div class="input-group">
                                     <input id="montant_existant" name="montant_existant" type="text"
                                         class="form-control" required="required" value="">
+                                        <span class="input-group-btn">
+                                        <button class="btn-input" type="button"data-bs-toggle="modal" data-bs-target="#montant-ex-info">
+                                            <i class="fa fa-info-circle"></i>
+                                        </button>
+                                    </span>
+                                    </div>
                                 </div>
 
                             </div>
@@ -552,7 +559,7 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
 
                                             <option value="--">Entre 30 et 40 %</option>
                                             <option value="--">Au-delà de 40 % - Refus de souscription</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -561,7 +568,8 @@ Découvrez comment nous utilisons les cookies et comment vous pouvez les contrô
                                     <label for="mer">Est-elle à moins de
                                         300m de la mer ?</label>
                                     <div>
-                                        <select id="mer" name="mer" class="form-select form-control" required="required">
+                                        <select id="mer" name="mer" class="form-select form-control"
+                                            required="required">
                                             <option value="non">non</option>
                                             <option value="oui" data-toggle="tooltip" data-placement="right" title="Bonjour Madame, Monsieur ,
 
@@ -649,7 +657,7 @@ Nous vous prions de croire, Madame, Monsieur, en l'expression de notre parfaite 
                                             <option value="8">8</option>
                                             <option value="9">9</option>
                                             <option value="10">10</option>
-                                            
+
                                             <option value="--">Plain pied (sans étage)</option>
                                         </select>
                                     </div>
@@ -804,9 +812,9 @@ IMPORTANT : Deux intervenants obligatoirement dans cette formule
                             </div>
                             <div class="form-group">
                                 <center>
-                                <div class="g-recaptcha" data-sitekey="6Lfq2koeAAAAAICHuoMAgglF1n4CRuMNbOUYBON9"
-                                    data-callback="correctCaptcha">
-                                </div>
+                                    <div class="g-recaptcha" data-sitekey="6Lfq2koeAAAAAICHuoMAgglF1n4CRuMNbOUYBON9"
+                                        data-callback="correctCaptcha">
+                                    </div>
                                 </center>
                             </div>
 
@@ -949,6 +957,30 @@ IMPORTANT : Deux intervenants obligatoirement dans cette formule
                 montant maximum de couverture possible est de 250
                 000 €.</p>
             <button type="button" class="close-popup" onclick="closeForm()">Fermer</button>
+        </div>
+    </div>
+
+    <div id="montant-ex-info" class="modal" tabindex="-1" role="dialog">
+        <h2 class="text-center" style="color:red;"></h2>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <p>
+                    On entend par « existants », uniquement la partie ancienne de la construction avant l’ouverture du chantier, sur,sous, ou dans lesquelles sont exécutés les travaux . Montant maximum : 250 000 €
+                    </p>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
         </div>
     </div>
 
